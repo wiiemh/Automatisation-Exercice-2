@@ -37,7 +37,7 @@ Il faut que le container database soit lancé pour effectuer ces commandes.
  
 **Supprimer et re-créer la base de données**  
 ```bash
-docker compose exec php bin/console db:create
+docker compose exec php php bin/console db:create
 ```
 
 **Alimenter la base de données**  

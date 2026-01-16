@@ -1,0 +1,13 @@
+{
+  "assets/script.js": {
+    "file": "assets/main-bicoEszn.js",
+    "name": "main",
+    "src": "assets/script.js",
+    "isEntry": true
+  },
+  "assets/style.css": {
+    "file": "assets/style-CGQc5HcV.css",
+    "src": "assets/style.css",
+    "isEntry": true
+  }
+}
