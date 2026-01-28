@@ -19,10 +19,10 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0",
         "phpstan/phpstan": "^2.1",
-        "fakerphp/faker": "^1.28"
+        "fakerphp/faker": "^1.24"
     },
     "scripts": {
-        "phpcs": "vendor\\bin\\phpcs --standard=phpcs.xml src",
-        "phpstan": "vendor\\bin\\phpstan analyse src --level 7"
+        "phpcs": "vendor/bin/phpcs --standard=phpcs.xml src",
+        "phpstan": "vendor/bin/phpstan analyse src --level 7"
     }
 }

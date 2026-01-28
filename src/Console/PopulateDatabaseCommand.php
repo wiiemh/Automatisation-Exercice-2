@@ -52,13 +52,13 @@ class PopulateDatabaseCommand extends Command
             $phone = preg_replace('/[^0-9+]/', '', $faker->phoneNumber);
             $email = $faker->companyEmail;
             $website = $faker->url;
-            $logo = 'https://via.placeholder.com/200x100?text='
+            $image = 'https://via.placeholder.com/200x100?text='
                 . rawurlencode($name);
 
             $db->getConnection()->statement(
-                "INSERT INTO `companies` (name, phone, email, website, logo, "
+                "INSERT INTO `companies` (name, phone, email, website, image, "
                 . "created_at, updated_at) VALUES (?, ?, ?, ?, ?, now(), now())",
-                [$name, $phone, $email, $website, $logo]
+                [$name, $phone, $email, $website, $image]
             );
 
             $companyId = (int)$db->getConnection()->getPdo()->lastInsertId();

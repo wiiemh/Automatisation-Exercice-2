@@ -52,7 +52,7 @@ class MyExtension extends AbstractExtension
     public function viteAsset(string $entry): string
     {
         $isDev = getenv('APP_ENV') === 'dev';
-        
+
         if ($isDev) {
             // In dev mode, serve directly from Vite dev server
             return 'http://localhost:5173/' . $entry;
@@ -68,7 +68,7 @@ class MyExtension extends AbstractExtension
     public function viteClient(): string
     {
         $isDev = getenv('APP_ENV') === 'dev';
-        
+
         if ($isDev) {
             return '<script type="module" src="http://localhost:5173/@vite/client"></script>';
         }
